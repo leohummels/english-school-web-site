@@ -1,0 +1,140 @@
+/*Geral*/
+:root {
+    --color-background:#F2E1DA;
+    --color-text-vector:#353535 64%;
+    --color-primary-text:#000000;
+    --color-secondary-text:#9A3B82;
+    --color-rectangle:#DFDFDF;
+    --color-rectangle-light:#9A3B82;
+    --color-text-rectangle:#FFFFFF; 
+    --color-box:#67C2C2;
+    --color-secondary-box:#4a9696;   
+}
+
+/*Introdução*/
+
+.quote {
+    margin-top: 60px;
+    text-align: left;
+    margin-right: 100px;
+}
+
+.quote div {
+    margin:auto 0;
+}
+
+/*Planos*/
+
+.planos {
+    margin-top: 60px;
+    background: url('../images/background.svg') no-repeat center;
+    background-size: 65%;
+}
+
+.planos button{
+    width: 300px;
+    height: 400px;
+    margin: 16px;
+}
+
+.btns {
+    margin: auto;
+    text-align: center;
+}
+
+.btns img {
+    margin: auto;
+} 
+
+.girassolbutton, .lotusbutton, .lisbutton,
+.gerberabutton, .astromeliabutton {
+    
+    background: var(--color-rectangle);
+    opacity: 90%;
+    border-radius: 20px;
+    border: 0;
+    color: var(--color-text-vector);
+    box-shadow:0 5px var(--color-text-vector);
+
+    opacity: 80%;
+    
+    white-space: pre-wrap;
+    
+    align-items: center;
+    text-align: center;
+
+
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 18px;
+    
+    padding: auto;
+
+    transition: 0.5s;
+}
+
+.girassolbutton:hover, .lotusbutton:hover, .lisbutton:hover,
+.gerberabutton:hover, .astromeliabutton:hover {
+    background: var(--color-rectangle-light);
+    opacity: 100%;
+    cursor: pointer;
+}
+
+
+
+/*Apresentação da professora*/
+
+.prof .titulo {
+    text-align: center;
+}
+
+.apresentacao {
+    margin: 20px;
+}
+
+
+.alunos {
+    margin-top: 60px;
+}
+
+.linha1, .linha3 {
+    padding: 30px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.linha1, .linha2, .linha3 {
+
+    padding-left: 0;
+}
+
+.linha1 .imagem, .linha3 .imagem {
+    margin-right: 0px;
+    float: left;
+    transform: scaleX(-1);
+}
+
+.linha2  {
+    margin-left: 8%;
+}
+.linha2 .texto{
+    margin-top: 0;
+    
+}
+
+.dark {
+    background-color: #afafaf;
+}
+
+.linha3 {
+    margin-bottom: 25px;
+}
+
+.linha1 .texto, .linha3 .texto {
+    margin-left: 0;
+    margin-top: 30px;
+}
+
+.alunos .imagem img, .fotodinha img{
+    margin: auto;
+}

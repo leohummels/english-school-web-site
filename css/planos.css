@@ -1,0 +1,97 @@
+:root {
+    --color-background:#F2E1DA;
+    --color-text-vector:#353535 64%;
+    --color-primary-text:#000000;
+    --color-secondary-text:#9A3B82;
+    --color-rectangle:#DFDFDF;
+    --color-rectangle-light:#9A3B82;
+    --color-text-rectangle:#FFFFFF; 
+    --color-box:#67C2C2;
+    --color-secondary-box:#4a9696;   
+}
+
+
+.quoteplan .titulo{
+    text-align: center;
+}
+
+.boxobservacao, .boxvalor {
+    border-radius: 20px;
+
+    color: var(--color-text-vector);
+    text-transform: none;
+    
+    align-items: center;
+    
+    width: 576px;
+    height: 385px;
+    
+}
+
+.boxobservacao {
+    border: 2px solid var(--color-box);
+
+}
+
+.boxvalor {
+    background-color: var(--color-box);   
+    
+}
+
+.boxobservacao h2, .boxobservacao h4, .boxvalor h2, .boxvalor h4 {
+    margin: 5%;
+}
+
+.btnspl {
+    margin: 0 0 0 20%;
+}
+
+.btnspl .lisbutton, .btnspl .girassolbutton,
+.btnspl .lotusbutton, .btnspl .gerberabutton, .btnspl .astromeliabutton {
+    margin: 0 10% 20% 10%;
+}
+
+.btnspl button {
+    margin-bottom: 20%;
+
+}
+
+.btnspl .lisbutton {
+    margin-right: 0%;
+}
+
+
+
+.btnspl1 button {
+    margin-right: 0;
+    margin-bottom: 20%;
+}
+
+.btnspl1 {
+    margin-top: 20%;
+  
+}
+
+.midline {
+    
+    margin: 0 0 0 1%;
+    margin-top: 30px;
+    height: 150rem;
+}
+
+.midline::after {
+    content:"";
+    display: inline-block;
+    margin: auto;
+    width: 2.5%;
+    height: 100%;
+    background:var(--color-text-vector);   
+}
+
+.btnspl::after {
+    content:"";
+    display: inline-block;
+    width: 10%;
+    height: 2%;
+    
+}

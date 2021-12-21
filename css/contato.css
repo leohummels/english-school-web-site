@@ -1,0 +1,107 @@
+/*Geral*/
+:root {
+    --color-background:#F2E1DA;
+    --color-text-vector:#353535 64%;
+    --color-primary-text:#000000;
+    --color-secondary-text:#9A3B82;
+    --color-rectangle:#DFDFDF;
+    --color-rectangle-light:#9A3B82;
+    --color-text-rectangle:#FFFFFF; 
+    --color-box:#67C2C2;
+    --color-secondary-box:#4a9696;   
+}
+
+/*sobre*/
+
+.navsobre ul{
+    display: inline-block;
+}
+
+.navsobre {
+    text-align: center;
+    
+}
+
+.navsobre li{
+    display: inline;
+    margin: 0 30px;
+}
+
+/*Apresentação da professora*/
+
+.sobreaqg  .titulo {
+    text-align: center;
+}
+
+.apresentacao {
+    margin: 20px;
+}
+
+.tapresentacao {
+    margin: 25px;
+    margin-left: 120px;
+}
+
+
+.alunos {
+    margin-top: 60px;
+}
+
+.linha1, .linha3 {
+    padding: 30px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.linha1, .linha2, .linha3 {
+    padding: 30px;
+    padding-left: 0;
+}
+
+
+
+
+
+
+.navproposta {
+    margin: 0;
+}
+
+.botoes {
+    margin: 2%;
+    margin-right: 0%;
+    marker: none;
+}
+
+.linha1contato .texto{
+    margin-top: 0;
+    margin-left: 3.5%;
+    margin-right: 0;
+}
+
+.linha1contato .imagem {
+    margin: 0;
+    margin-left: 2%;
+}
+
+.linha1contato .texto p a {
+    color: var(--color-box);
+    transition: 0.5s;
+}
+
+.linha1contato .texto p a:hover{
+    color: #68e2e2;
+}
+
+.contatos {
+    padding: 10px;
+}
+
+.contatos .labels div input, .labels .inputmatter {
+    padding: 30px;
+}
+
+.btncontato {
+    padding: 15px 50px;
+    float: right;
+}
