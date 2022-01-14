@@ -50,22 +50,23 @@
             </div> 
         </div>
     <section id="" class="contact contatos container row">
-        <form class="labels texto twelve columns">
+        <form class="labels texto twelve columns" action="/forms" method="get">
             <div class="six columns">
                 <label class="name" >Nome Completo</label>
-                <input type="text" class="inputname ">
+                <input type="text" class="inputname " name="user_name">
             </div>
             <div class="six columns">
-            <label class="email">E-mail</label>
-            <input type="email" class="inputemail">
+                <label class="email">E-mail</label>
+                <input type="email" class="inputemail" name="user_email">
             </div>
             <label class="matter" >Assunto</label>
-            <input type="text" class="inputmatter">
+            <input type="text" maxlength="60" class="inputmatter" name="user_matter">
             <label class="message">Mensagem</label>
-            <textarea  class="inputmessage" 
+            <textarea  class="inputmessage"  maxlength="500" name="user_mesage"
             placeholder="Hello, Dinha! How are you?"></textarea>
             <button type="submit" class="btncontato submitcontact btn"><a>Enviar</a></button>
         </form>
+        <script src="/js/forms.js"></script>
     </section>
     <section>
         <footer class="container row">
