@@ -1,24 +1,24 @@
-const { EmailValidator } = require("./valEmail");
-const { NameValidator } = require("./valName");
+import {noWhiteSpaces, valEmail} from "./valEmail.js";
+//import NameValidator from "./valName.js";
 
-const validateEmail = new EmailValidator;
-const validateName = new NameValidator;
+//const validator = valid();
 
 let name = document.getElementsByTagName("user_name")
 let email = document.getElementsByTagName("user_email")
 
 function validateForm(name, email) {
-
-    let val1 = validateName.noWhiteSpaces(name)
-
-    let val2 = validateEmail.validateEmail(email)
+    const val1 = noWhiteSpaces(name)
+    const val2 = valEmail(email)
 
     if(val1 === true && val2 === true) {
+        console.log(val1 + val2)
         return true
     } else {
+        console.log(val1 + val2)
         return false
     }
-
 }
 
-validateForm(name.value, email.value)
+const validate = validateForm(name.value, email.value)
+
+document.addEventListener("click", validateForm)

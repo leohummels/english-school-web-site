@@ -1,21 +1,27 @@
-class EmailValidator {
-    
-    constructor (email) {
-        this.email = email
-        //typeof this.email == String
-    }
 
-    valEmail(email) {
+export function valEmail(email) {
         let regexp = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)?(\.[a-z]{2,3})$/gi
-        
-            if(email.match(regexp)) {
-                return true
+        let result = ""
+            if(String(email).match(regexp)) {
+                result = true
             }  else {
-                return "Por favor, insira uma e-mail válido."
+                result = "Por favor, insira uma e-mail válido."
             }
+        return result
         
     }
-}
+
+export function noWhiteSpaces(nome) {
+        let regexp = /\s+/gi
+        let result = ""
+        if(String(nome).match(regexp)) {
+        result = "Por favor, insira um nome válido"
+        } else {
+        result = true
+        }
+        return result
+    }
 
 
-module.exports = new EmailValidator;
+
+//module.exports = new EmailValidator;

@@ -1,4 +1,4 @@
-class NameValidator {
+export class NameValidator {
     
     constructor (name) {
         this.name = name
@@ -15,4 +15,4 @@ class NameValidator {
 
 }
 
-module.exports = new NameValidator;
+//module.exports = new NameValidator;

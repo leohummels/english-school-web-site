@@ -14,7 +14,6 @@ let next = function() {
         n = 0
         box[n].classList.add("class", "boxactive")       
     }
-    console.log(n)
 }
         
 
@@ -23,7 +22,7 @@ let previous = function()  {
         n--
         if (n >= 0) {
         box[n].classList.add("class", "boxactive") 
-        } else {
+        } else  if (n <= 0){
         n = 2
         box[n].classList.add("class", "boxactive")       
 }
